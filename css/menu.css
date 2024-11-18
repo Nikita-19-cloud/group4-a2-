@@ -1,0 +1,145 @@
+body{
+    color:black;
+    background-color: black;
+    background-image: url("images/bean.jpg");
+    font-size: large;
+}
+
+.content {
+    max-width: 1000px;
+    margin:0 auto;
+    padding: 20px;
+    
+    height:auto;
+    background-image: url("images/brown.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.back-home {
+    text-decoration: none;
+    color:black;
+     background-color: white;
+     border-radius:2px;
+    
+}
+.navigation {
+    margin: 25px;
+}
+
+.navigation ul {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+}
+
+.navigation ul li {
+
+    margin: 0 15px; 
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-size: 1.2em; 
+}
+
+.navigation ul li a:hover {
+    color: #ffb74d; 
+}
+header{
+    
+    text-align: center;
+    top:0;
+    position:sticky;}
+  
+
+    
+
+   
+
+.container{
+
+    
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap:20px;
+}
+#Hot_Drinks,#Cold_Drinks,#snacks{
+    text-align: center;
+}
+
+
+.left, .center, .right {
+    padding: 20px;
+}
+figure {
+        float: left;
+        margin: 10px;
+        text-align: center;
+    }
+    .container::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+ 
+.footer-bottom {
+    
+    color: #fff; /* White text */
+    padding: 1px 1px; /* Padding around */
+}
+figure {
+    transition: transform 0.3s ease-in-out;
+}
+
+figure:hover {
+    transform: scale(1.1); /* Zoom in effect */
+}
+.section-calories{
+    column-count: 3;
+    border:3px solid black;
+}
+
+
+.section-calories aside {
+    margin:10px;
+}
+
+.section-calories h3 {
+    text-align: center;
+}
+.section-calories ul{
+    list-style-type: none;
+}
+.multicol h2{
+    text-align: center;
+}
+footer{
+    color:white;
+    text-align: right;
+    
+}
+@media screen and (max-width:768px){
+    body{
+        color:white;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .content{
+        height:auto;
+    }
+    .section-calories{
+        column-count: 1;
+        text-align: center;
+    }
+    figure{
+        width:350px;
+        height:220px;
+    }
+}
+
+
+
